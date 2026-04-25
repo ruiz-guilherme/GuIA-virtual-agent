@@ -1,0 +1,30 @@
+# 🔹 Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 🔹 Ambiente virtual
+venv/
+.env/
+
+# 🔹 Configurações sensíveis
+.env
+*.env
+
+# 🔹 Logs
+*.log
+
+# 🔹 IDEs
+.vscode/
+.idea/
+
+# 🔹 Sistema operacional
+.DS_Store
+Thumbs.db
+
+# 🔹 Streamlit
+.streamlit/secrets.toml
+
+# 🔹 Jupyter (se usar no futuro)
+.ipynb_checkpoints/

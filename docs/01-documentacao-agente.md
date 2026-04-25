@@ -3,41 +3,30 @@
 ## Caso de Uso
 
 ### Problema
-> Qual problema financeiro seu agente resolve?
-
-[Sua descrição aqui]
+Muitas pessoas tem dificuldade no controle financeiro. Não sabem para onde está indo o dinheiro e/ou não sabem o que fazer com o que sobra.
 
 ### Solução
-> Como o agente resolve esse problema de forma proativa?
-
-[Sua descrição aqui]
+O GuIA veio para fazer esse controle financeiro e explicar como funcionam os diversos tipos de investimento. Mas ele não é um consultor de investimentos, o objetivo é ensinar o funcionamento mas sem fazer indicações.
 
 ### Público-Alvo
-> Quem vai usar esse agente?
-
-[Sua descrição aqui]
-
----
+Pessoas sem acesso a consultores ou contadores.
 
 ## Persona e Tom de Voz
+O GuIA é um bot amigável e didático
 
 ### Nome do Agente
-[Nome escolhido]
+GuIA
 
 ### Personalidade
-> Como o agente se comporta? (ex: consultivo, direto, educativo)
-
-[Sua descrição aqui]
+Responde diretamente de forma curta e amigável
 
 ### Tom de Comunicação
-> Formal, informal, técnico, acessível?
-
-[Sua descrição aqui]
+Acessível
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
+- Saudação: Olá! Como posso ajudar com suas finanças hoje?
+- Confirmação: Entendi! Deixa eu verificar isso para você.
+- Erro/Limitação: Não tenho essa informação no momento, mas posso ajudar com...
 
 ---
 
@@ -59,10 +48,10 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
+| Interface | Chatbot em Streamlit |
+| LLM | GPT-OSS via OLLAMA |
+| Base de Conhecimento | JSON/CSV com dados do cliente |
+| Validação | Checagem de alucinações |
 
 ---
 
@@ -70,12 +59,9 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [ ] Agente só responde com base nos dados fornecidos
+- [ ] Quando não sabe, admite e redireciona
+- [ ] Não faz recomendações, apenas explica didaticamente
 
 ### Limitações Declaradas
-> O que o agente NÃO faz?
-
-[Liste aqui as limitações explícitas do agente]
+Não faz recomendações e nem fornece informações de assunto fora do mundo financeiro

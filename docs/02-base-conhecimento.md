@@ -13,8 +13,6 @@
 
 ## Adaptações nos Dados
 
-> Você modificou ou expandiu os dados mockados? Descreva aqui.
-
 Removi a opção de Fundo Multimercado e adicionei o Fundo Imobiliário, pois é um método mais conhecido e utilizado no mundo de investimentos.
 
 ---
@@ -22,8 +20,6 @@ Removi a opção de Fundo Multimercado e adicionei o Fundo Imobiliário, pois é
 ## Estratégia de Integração
 
 ### Como os dados são carregados?
-
-> Descreva como seu agente acessa a base de conhecimento.
 
 Injetando os dados diretamente no prompt (Copiar e Colar) ou carregar os arquivos via código.
 
@@ -47,14 +43,12 @@ with open ('data/produtos_financeiros.json', 'r', encoding='utf-8') as f:
 
 ### Como os dados são usados no prompt?
 
-> Os dados vão no system prompt? São consultados dinamicamente?
-
 ```text
 DADOS DO CLIENTE E PERFIL (data/perfil_investidor.json):
 {
-  "nome": "João Silva",
-  "idade": 32,
-  "profissao": "Analista de Sistemas",
+  "nome": "Guilherme Ruiz",
+  "idade": 26,
+  "profissao": "Analista de Telecomunicações",
   "renda_mensal": 5000.00,
   "perfil_investidor": "moderado",
   "objetivo_principal": "Construir reserva de emergência",
@@ -144,8 +138,6 @@ PRODUTOS DISPONIVEIS (data/produtos_financeiros.json):
 ---
 
 ## Exemplo de Contexto Montado
-
-> Mostre um exemplo de como os dados são formatados para o agente.
 
 ```
 DADOS DO CLIENTE:
